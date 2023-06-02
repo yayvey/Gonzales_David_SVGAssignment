@@ -54,15 +54,15 @@ p{
 }
 
 #dome-tent:hover #dome-tent2 {
-    opacity:10%;
+    opacity:15%;
 }
 
 #hiker:hover #hiker-2 {
-    opacity:10%;
+    opacity:15%;
 }
 
 #hop-and-barley:hover #hop-and-barley2 {
-    opacity:10%;
+    opacity:15%;
 }
 
 /* Responsive build*/
