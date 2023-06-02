@@ -1,0 +1,87 @@
+.hidden {
+    display: none;
+}
+
+#title {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: #233B23;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#main-text-content {
+    font-size: 18px;
+}
+
+#billy-can, #logo-no-words, #bnw-glass, #dome-tent, #hiker, #hop-and-barley {
+    width: 200px;
+}
+
+/*Animations*/
+
+#handle, #inner-picture, #bnw-glass-2, #dome-tent2, #hiker-2, #hop-and-barley2 {
+    transition: all 0.5s ease;
+}
+
+#billy-can:hover #handle{
+    stroke: #FF0000;
+    fill:#FF0000;
+}
+
+#logo-no-words:hover #inner-picture{
+    stroke: #FF0000;
+    fill:#FF0000;
+}
+
+#bnw-glass:hover #bnw-glass-2 {
+    stroke: #FF0000;
+    fill:#FF0000;
+}
+
+#dome-tent:hover #dome-tent2 {
+    opacity:15%;
+}
+
+#hiker:hover #hiker-2 {
+    opacity:15%;
+}
+
+#hop-and-barley:hover #hop-and-barley2 {
+    opacity:15%;
+}
+
+/* Responsive build*/
+@media screen and (min-width: 786px) {
+    .content-containers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    img {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-containers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
